@@ -1,5 +1,8 @@
-site_name: My Docs
+site_name: LLDS-Blog
 
 theme:
   name: material
+  features:
+    - navigation.tabs
+    - navigation.path
 
