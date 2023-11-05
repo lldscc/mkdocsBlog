@@ -1,19 +1,22 @@
+
+
+## 引入
+
 [Bootstrap框架官方文档](https://www.bootcss.com)
 
-# 引入
-
-## 普通项目
+### 普通项目
 
 1. 在线引入
 
-   ```html
-   <!-- Bootstrap 的 CSS 文件 -->
+```html
+<html>
+   <head>
+<!-- Bootstrap 的 CSS 文件 -->
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
            integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-   ```
+ </head>
+</html>
 
-
-   ```html
    <!-- 引入script -->
    <!-- jQuery &&  bootstrap.min.js &&  popper.min.js 先是 jQuery，然后是 Popper，最后是 JavaScript 插件 -->
    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
@@ -21,11 +24,11 @@
            crossorigin="anonymous"></script>
    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-   ```
+```
 
    
 
-# 栅格化布局
+### 栅格化布局
 
 采用网格布局的区域，称为"容器"(container)。容器内部采用网格定位的子元素，是项目（item）
 
@@ -43,12 +46,7 @@
 |    偏移（Offsets）    | 是                         |                                                     |                                                     |                                                     |
 |        列排序         | 是                         |                                                     |                                                     |                                                     |
 
-
-
-```
-# Bootstrap V4
-
-## 基本模板
+### 基本模板
 
 ```html
 <!doctype html>
@@ -82,10 +80,10 @@
 </html>
 ```
 
-# 工具类
+## 工具类
 
-## 颜色
-### 文本颜色text
+### 颜色
+#### 文本颜色text
 
 ![image-20231001192621062](https://cdn.jsdelivr.net/gh/Shuncsx/image/image-20231001192621062.png)
 
@@ -105,7 +103,7 @@
 <p class="text-white-50 bg-dark">.text-white-50</p>
 ```
 
-### 背景颜色Background color
+#### 背景颜色Background color
 
 <img src="https://cdn.jsdelivr.net/gh/Shuncsx/image/image-20231001192354581.png" alt="image-20231001192354581" style="zoom: 50%;" />
 
