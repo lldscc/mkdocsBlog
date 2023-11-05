@@ -1,0 +1,4 @@
+GlobleStyle全局外观
+
+view相当于div标签
+text相当于span标签

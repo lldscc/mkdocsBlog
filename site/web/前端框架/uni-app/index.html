@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../Ajax/">
+        <link rel="prev" href="../Vue-UI%E7%BB%84%E4%BB%B6%E5%BA%93/">
       
       
-        <link rel="next" href="../Glidejs/">
+        <link rel="next" href="../Nodejs/Node.js/">
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>Bootstrap - LLDS-Blog</title>
+        <title>Uni app - LLDS-Blog</title>
       
     
     
@@ -64,11 +64,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#_1" class="md-skip">
-          Skip to content
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -99,7 +94,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Bootstrap
+              Uni app
             
           </span>
         </div>
@@ -892,29 +887,9 @@
                 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Bootstrap
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../Bootstrap/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -923,33 +898,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    普通项目
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1019,9 +967,16 @@
                 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../uni-app/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -1030,6 +985,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -1411,23 +1367,6 @@
   
   
   
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    普通项目
-  </a>
-  
-</li>
-      
-    </ul>
   
 </nav>
                   </div>
@@ -1442,195 +1381,11 @@
                   
 
 
-<p><a href="https://www.bootcss.com">Bootstrap框架官方文档</a></p>
-<h1 id="_1">引入</h1>
-<h2 id="_2">普通项目</h2>
-<ol>
-<li>在线引入</li>
-</ol>
-<p>```html
-   <!-- Bootstrap 的 CSS 文件 --></p>
-<p><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-           integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-   ```</p>
-<p>```html
-   <!-- 引入script --></p>
-<!-- jQuery &&  bootstrap.min.js &&  popper.min.js 先是 jQuery，然后是 Popper，最后是 JavaScript 插件 -->
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-           integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-           crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<p>```</p>
-<h1 id="_3">栅格化布局</h1>
-<p>采用网格布局的区域，称为"容器"(container)。容器内部采用网格定位的子元素，是项目（item）</p>
-<p>注意：项目只能是容器的顶层子元素，不包含项目的子元素，比如上面代码的&lt;&gt;元素就不是项目，Grid布局只对项目生效。</p>
-<table>
-<thead>
-<tr>
-<th style="text-align: center;"></th>
-<th style="text-align: left;">超小屏幕 手机 (&lt;768px）</th>
-<th style="text-align: left;">小屏幕 平板（≥768px）</th>
-<th style="text-align: left;">中等屏幕 桌面显示器 (≥992px)</th>
-<th>大屏幕 大桌面显示器 (≥1200px)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: center;">栅格系统行为</td>
-<td style="text-align: left;">总是水平排列</td>
-<td style="text-align: left;">开始是堆叠在一起的，当大于这些阈值时将变为水平排列C</td>
-<td style="text-align: left;">开始是堆叠在一起的，当大于这些阈值时将变为水平排列C</td>
-<td>开始是堆叠在一起的，当大于这些阈值时将变为水平排列C</td>
-</tr>
-<tr>
-<td style="text-align: center;"><code>.container</code> 最大宽度</td>
-<td style="text-align: left;">None （自动）</td>
-<td style="text-align: left;">750px</td>
-<td style="text-align: left;">970px</td>
-<td>1170px</td>
-</tr>
-<tr>
-<td style="text-align: center;">类前缀</td>
-<td style="text-align: left;"><code>.col-xs-</code></td>
-<td style="text-align: left;"><code>.col-sm-</code></td>
-<td style="text-align: left;"><code>.col-md-</code></td>
-<td><code>.col-lg-</code></td>
-</tr>
-<tr>
-<td style="text-align: center;">列（column）数</td>
-<td style="text-align: left;">12</td>
-<td style="text-align: left;">12</td>
-<td style="text-align: left;">12</td>
-<td>12</td>
-</tr>
-<tr>
-<td style="text-align: center;">最大列（column）宽</td>
-<td style="text-align: left;">自动</td>
-<td style="text-align: left;">~62px</td>
-<td style="text-align: left;">~81px</td>
-<td>~97px</td>
-</tr>
-<tr>
-<td style="text-align: center;">槽（gutter）宽</td>
-<td style="text-align: left;">30px （每列左右均有 15px）</td>
-<td style="text-align: left;">30px （每列左右均有 15px）</td>
-<td style="text-align: left;">30px （每列左右均有 15px）</td>
-<td>30px （每列左右均有 15px）</td>
-</tr>
-<tr>
-<td style="text-align: center;">可嵌套</td>
-<td style="text-align: left;">是</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td></td>
-</tr>
-<tr>
-<td style="text-align: center;">偏移（Offsets）</td>
-<td style="text-align: left;">是</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td></td>
-</tr>
-<tr>
-<td style="text-align: center;">列排序</td>
-<td style="text-align: left;">是</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<pre><code># Bootstrap V4
+  <h1>Uni app</h1>
 
-## 基本模板
-
-```html
-&lt;!doctype html&gt;
-&lt;html lang=&quot;zh-CN&quot;&gt;
-  &lt;head&gt;
-    &lt;!-- 必须的 meta 标签 --&gt;
-    &lt;meta charset=&quot;utf-8&quot;&gt;
-    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1, shrink-to-fit=no&quot;&gt;
-
-    &lt;!-- Bootstrap 的 CSS 文件 --&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css&quot; integrity=&quot;sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N&quot; crossorigin=&quot;anonymous&quot;&gt;
-
-    &lt;title&gt;Hello, world!&lt;/title&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;h1&gt;Hello, world!&lt;/h1&gt;
-
-    &lt;!-- JavaScript 文件是可选的。从以下两种建议中选择一个即可！ --&gt;
-
-    &lt;!-- 选项 1：jQuery 和 Bootstrap 集成包（集成了 Popper） --&gt;
-    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js&quot; integrity=&quot;sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
-    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js&quot; integrity=&quot;sha384-7ymO4nGrkm372HoSbq1OY2DP4pEZnMiA+E0F3zPr+JQQtQ82gQ1HPY3QIVtztVua&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
-
-    &lt;!-- 选项 2：Popper 和 Bootstrap 的 JS 插件各自独立 --&gt;
-    &lt;!--
-    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js&quot; integrity=&quot;sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
-    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js&quot; integrity=&quot;sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
-    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js&quot; integrity=&quot;sha384-Lge2E2XotzMiwH69/MXB72yLpwyENMiOKX8zS8Qo7LDCvaBIWGL+GlRQEKIpYR04&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
-    --&gt;
-  &lt;/body&gt;
-&lt;/html&gt;
-</code></pre>
-<h1 id="_4">工具类</h1>
-<h2 id="_5">颜色</h2>
-<h3 id="text">文本颜色text</h3>
-<p><img alt="image-20231001192621062" src="https://cdn.jsdelivr.net/gh/Shuncsx/image/image-20231001192621062.png" /></p>
-<pre><code class="language-html">&lt;p class=&quot;text-primary&quot;&gt;.text-primary&lt;/p&gt;
-&lt;p class=&quot;text-secondary&quot;&gt;.text-secondary&lt;/p&gt;
-&lt;p class=&quot;text-success&quot;&gt;.text-success&lt;/p&gt;
-&lt;p class=&quot;text-danger&quot;&gt;.text-danger&lt;/p&gt;
-&lt;p class=&quot;text-warning&quot;&gt;.text-warning&lt;/p&gt;
-&lt;p class=&quot;text-info&quot;&gt;.text-info&lt;/p&gt;
-&lt;p class=&quot;text-light bg-dark&quot;&gt;.text-light&lt;/p&gt;
-&lt;p class=&quot;text-dark&quot;&gt;.text-dark&lt;/p&gt;
-&lt;p class=&quot;text-body&quot;&gt;.text-body&lt;/p&gt;
-&lt;p class=&quot;text-muted&quot;&gt;.text-muted&lt;/p&gt;
-&lt;p class=&quot;text-white bg-dark&quot;&gt;.text-white&lt;/p&gt;
-&lt;p class=&quot;text-black-50&quot;&gt;.text-black-50&lt;/p&gt;
-&lt;p class=&quot;text-white-50 bg-dark&quot;&gt;.text-white-50&lt;/p&gt;
-</code></pre>
-<h3 id="background-color">背景颜色Background color</h3>
-<p><img src="https://cdn.jsdelivr.net/gh/Shuncsx/image/image-20231001192354581.png" alt="image-20231001192354581" style="zoom: 50%;" /></p>
-<pre><code class="language-html">&lt;div class=&quot;p-3 mb-2 bg-primary text-white&quot;&gt;.bg-primary&lt;/div&gt;
-&lt;div class=&quot;p-3 mb-2 bg-secondary text-white&quot;&gt;.bg-secondary&lt;/div&gt;
-&lt;div class=&quot;p-3 mb-2 bg-success text-white&quot;&gt;.bg-success&lt;/div&gt;
-&lt;div class=&quot;p-3 mb-2 bg-danger text-white&quot;&gt;.bg-danger&lt;/div&gt;
-&lt;div class=&quot;p-3 mb-2 bg-warning text-dark&quot;&gt;.bg-warning&lt;/div&gt;
-&lt;div class=&quot;p-3 mb-2 bg-info text-white&quot;&gt;.bg-info&lt;/div&gt;
-&lt;div class=&quot;p-3 mb-2 bg-light text-dark&quot;&gt;.bg-light&lt;/div&gt;
-&lt;div class=&quot;p-3 mb-2 bg-dark text-white&quot;&gt;.bg-dark&lt;/div&gt;
-&lt;div class=&quot;p-3 mb-2 bg-white text-dark&quot;&gt;.bg-white&lt;/div&gt;
-&lt;div class=&quot;p-3 mb-2 bg-transparent text-dark&quot;&gt;.bg-transparent&lt;/div&gt;
-</code></pre>
-<h2 id="_6">定位</h2>
-<h3 id="_7">更改定位</h3>
-<pre><code class="language-html">&lt;div class=&quot;position-static&quot;&gt;...&lt;/div&gt;
-&lt;div class=&quot;position-relative&quot;&gt;...&lt;/div&gt;
-&lt;div class=&quot;position-absolute&quot;&gt;...&lt;/div&gt;
-&lt;div class=&quot;position-fixed&quot;&gt;...&lt;/div&gt;
-&lt;div class=&quot;position-sticky&quot;&gt;...&lt;/div&gt;
-</code></pre>
-<h3 id="_8">固定在顶部</h3>
-<pre><code class="language-html">&lt;div class=&quot;fixed-top&quot;&gt;...&lt;/div&gt;
-</code></pre>
-<h3 id="_9">固定在底部</h3>
-<pre><code class="language-html">&lt;div class=&quot;fixed-bottom&quot;&gt;...&lt;/div&gt;
-</code></pre>
-<h2 id="_10">间距</h2>
-<p><code>m</code> -对于设置了 <code>margin</code> 的类</p>
-<p><code>p</code> -对于设置了 <code>padding</code> 的类</p>
-<h2 id="_11">排列</h2>
-<p>```css
-class="row justify-content-start"
-class="row justify-content-center"
-class="row justify-content-end"
-class="row justify-content-around"
-class="row justify-content-between"</p>
+<p>GlobleStyle全局外观</p>
+<p>view相当于div标签
+text相当于span标签</p>
 
 
 
